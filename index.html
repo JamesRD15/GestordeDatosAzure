@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestor de Datos CSV</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Gestor de Datos CSV</h1>
+
+  <!-- Cargar CSV directamente -->
+  <input type="file" id="fileInput" onchange="leerArchivo()" />
+
+  <button onclick="descargarCSV()">Descargar CSV visible</button>
+
+  <!-- Contenedor de filtros -->
+  <div id="filtros" style="margin-top: 10px;"></div>
+
+  <!-- Gráfico dinámico -->
+  <canvas id="grafico" width="400" height="200"></canvas>
+
+  <!-- Tabla de datos -->
+  <table id="tablaDatos"></table>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
